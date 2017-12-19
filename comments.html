@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -35,10 +36,10 @@
 				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item navigation__item--main">
-							<a href="index.html" class="navigation__link navigation__link--active">Главная</a>
+							<a href="index.html" class="navigation__link ">Главная</a>
 						</li>
 						<li class="navigation__item navigation__item--feed">
-							<a href="comments.html" class="navigation__link">Отзывы</a>
+							<a href="comments.html" class="navigation__link navigation__link--active">Отзывы</a>
 						</li>
 						<li class="navigation__item navigation__item--team">
 							<a href="" class="navigation__link">Экипаж</a>
@@ -48,6 +49,17 @@
 			</aside>
 			<!--Основное содержимое страницы-->
 			<main class="main">
+				<section class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link breadcrumbs__link--active" href="">Отзывы</a>
+						</li>
+					</ul>
+					
+				</section>
 				<section class="reviews">
 					<div class="title__h2 title__h2--reviews ">
 						Отзывы
@@ -57,7 +69,7 @@
 						<div class="reviews__container clearfix">
 							<li class="reviews__item">
 								<div class="reviews__icon">
-									<img class="reviews__img" src="img/main/news/foto1.png" alt="">
+									<img class="reviews__img" src="img/comment/foto1.png" alt="">
 								</div>
 								<div class="reviews__text">
 									<div class="reviews__text-data">
@@ -76,7 +88,7 @@
 						<div class="reviews__container clearfix">
 							<li class="reviews__item">
 								<div class="reviews__icon">
-									<img class="reviews__img" src="img/main/news/foto1.png" alt="">
+									<img class="reviews__img" src="img/comment/foto2.png" alt="">
 								</div>
 								<div class="reviews__text">
 									<div class="reviews__text-data">
@@ -95,7 +107,26 @@
 						<div class="reviews__container clearfix">
 							<li class="reviews__item">
 								<div class="reviews__icon">
-									<img class="reviews__img" src="img/main/news/foto1.png" alt="">
+									<img class="reviews__img" src="img/comment/foto3.png" alt="">
+								</div>
+								<div class="reviews__text">
+									<div class="reviews__text-data">
+										12.10.2016
+									</div>
+									<div class="reviews__text-author">
+										Ирина Паламарчук
+									</div>
+									<div class="reviews__text-desc">
+										Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
+									</div>
+								</div>
+							</li>
+						</div>
+						<!--comments 4-->
+						<div class="reviews__container clearfix">
+							<li class="reviews__item">
+								<div class="reviews__icon">
+									<img class="reviews__img" src="img/comment/foto4.png" alt="">
 								</div>
 								<div class="reviews__text">
 									<div class="reviews__text-data">
@@ -151,7 +182,7 @@
 		<section class="help">
 			<div class="container">
 				<div class="help__content">
-					Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
+					Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <a class="help__content--link" href="">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки <a class="help__content--tel" href=""> 8 (800) 00-392-10.</a>
 				</div>
 			</div>
 		</section>
@@ -181,19 +212,19 @@
 						<div class="form__row clearfix">
 							<div class="form__row-col form__row-col--left">
 								<div class="form__input-title">Отображать фото в отзыве ?</div>
-								<label for="" class="form__radio">
-									<input type="radio" class="form__radio-elem" checked >
+								<label class="form__radio clearfix ">
+									<input type="radio" class="form__radio-elem"  name="test">
 									<div class="form__radio-fake"></div>
 									<div class="form__radio-text">Да</div>
 								</label>
-								<label for="" class="form__radio">
-									<input type="radio" class="form__radio-elem"  >
+								<label  class="form__radio">
+									<input type="radio" class="form__radio-elem"  name="test">
 									<div class="form__radio-fake"></div>
 									<div class="form__radio-text">Нет</div>
 								</label>
 							</div>
 							<div class="form__row-col form__row-col--right">
-								<button class="form__submit" >Отправить</button>
+								<span class="button" onClick="alert(1);">Отправить</span>
 							</div>
 						</div>
 					</div>
