@@ -395,26 +395,21 @@ ul {
     height: 13px;
     background-position: -5px -5px;
 }
-
 .social__link--sprite-g {
 	width: 17px;
     height: 12px;
     background-position: -19px -4px;
 }
-}
-
-.social__link--sprite-mail{
+.social__link--sprite-mail {
 	width: 12px;
     height: 9px;
     background-position: -21px -24px;
 }
-
 .social__link--sprite-tw {
     width: 11px;
     height: 12px;
     background-position: -46px -3px;
 }
-
 .social__link--sprite-vk {
 	 width: 13px;
     height: 10px;
